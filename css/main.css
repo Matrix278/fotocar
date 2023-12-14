@@ -1,0 +1,17 @@
+.homeBackground{
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(https://picsum.photos/1920/1080);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: overlay;
+    height: 70vh;
+    width: 100%;
+    z-index: 1;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.robotoFont {
+    font-family: "Roboto", sans-serif;
+}
