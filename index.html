@@ -53,26 +53,30 @@
   <body>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light py-3">
       <div class="container">
-        <a class="navbar-brand" href="#about">
-          <img
-            class="img-fluid"
-            src="images/fotocar_fullname_logo.webp"
-            alt="Fotocar logo"
-            width="22%"
-          />
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
+        <div class="d-flex w-100 justify-content-between align-items-center">
+          <a class="navbar-brand" href="#about">
+            <img
+              class="img-fluid"
+              src="images/fotocar_fullname_logo.webp"
+              alt="Fotocar logo"
+              style="max-height: 50px"
+            />
+          </a>
+          <button
+            class="navbar-toggler ms-auto"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <!-- Desktop menu -->
           <ul
             class="d-none d-lg-flex navbar-nav mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0 position-absolute top-50 start-50 translate-middle"
           >
@@ -88,9 +92,9 @@
             <li class="nav-item me-4">
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
-            <li class="nav-item"></li>
           </ul>
 
+          <!-- Mobile menu -->
           <ul class="navbar-nav mt-3 mt-lg-0 mb-3 mb-lg-0 d-lg-none">
             <li class="nav-item me-4">
               <a class="nav-link" href="#about">About me</a>
@@ -105,7 +109,6 @@
               <a class="nav-link" href="#contacts">Contacts</a>
             </li>
           </ul>
-          <div class="ms-auto"></div>
         </div>
       </div>
     </nav>
