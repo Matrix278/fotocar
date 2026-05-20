@@ -50,18 +50,6 @@
   "reviews.subtitle": "Настоящие отзывы Google о Fotocar",
   "reviews.leave": "Оставить отзыв в Google",
 
-  "booking.title": "Забронировать фотосъёмку",
-  "booking.subtitle": "Расскажите про ваш автомобиль, и я быстро вам отвечу.",
-  "booking.name": "Имя",
-  "booking.email": "Email",
-  "booking.phone": "Телефон",
-  "booking.car": "Модель автомобиля",
-  "booking.message": "Сообщение",
-  "booking.submit": "Отправить заявку",
-  "booking.sending": "Отправка...",
-  "booking.success": "Спасибо! Ваша заявка успешно отправлена.",
-  "booking.error": "Сейчас не удалось отправить. Попробуйте ещё раз или напишите мне на email.",
-
   "contacts.title": "По вопросам пишите на email или в социальные сети.",
   "contacts.address": "Адрес:",
   "contacts.addressValue": "Эстония",

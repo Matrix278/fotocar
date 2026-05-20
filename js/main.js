@@ -120,61 +120,6 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   applyLanguage(initial);
 })();
 
-//------------------------ Booking form (AJAX submit) ------------------------//
-(function initBookingForm() {
-  const form = document.querySelector("#booking-form");
-  const submitBtn = document.querySelector("#booking-submit");
-  const statusEl = document.querySelector("#booking-status");
-  if (!form || !submitBtn || !statusEl) return;
-
-  form.addEventListener("submit", async (evt) => {
-    evt.preventDefault();
-
-    statusEl.classList.remove("text-danger", "text-success", "text-muted");
-    statusEl.classList.add("text-muted");
-    statusEl.textContent = t("booking.sending", "Sending...");
-
-    const originalBtnText = submitBtn.textContent;
-    submitBtn.disabled = true;
-    submitBtn.textContent = t("booking.sending", "Sending...");
-
-    try {
-      const formData = new FormData(form);
-      const res = await fetch(
-        "https://formsubmit.co/ajax/fotocar.eu@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            Accept: "application/json",
-          },
-          body: formData,
-        },
-      );
-
-      if (!res.ok) throw new Error(`Submit failed: ${res.status}`);
-
-      statusEl.classList.remove("text-muted");
-      statusEl.classList.add("text-success");
-      statusEl.textContent = t(
-        "booking.success",
-        "Thanks! Your request was sent successfully.",
-      );
-      form.reset();
-    } catch (err) {
-      console.error(err);
-      statusEl.classList.remove("text-muted");
-      statusEl.classList.add("text-danger");
-      statusEl.textContent = t(
-        "booking.error",
-        "Couldn't send right now. Please try again or email me directly.",
-      );
-    } finally {
-      submitBtn.disabled = false;
-      submitBtn.textContent = originalBtnText;
-    }
-  });
-})();
-
 //------------------------ Before / After slider (pointer-driven) ------------------------//
 document.querySelectorAll(".ba-slider").forEach((slider) => {
   const beforeWrap = slider.querySelector(".ba-before-wrap");

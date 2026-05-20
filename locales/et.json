@@ -50,18 +50,6 @@
   "reviews.subtitle": "Päris arvustused Google'is Fotocari kohta",
   "reviews.leave": "Jäta Google'i arvustus",
 
-  "booking.title": "Broneeri fotosessioon",
-  "booking.subtitle": "Kirjelda oma autot ja vastan kiiresti.",
-  "booking.name": "Nimi",
-  "booking.email": "E-post",
-  "booking.phone": "Telefon",
-  "booking.car": "Auto mudel",
-  "booking.message": "Sõnum",
-  "booking.submit": "Saada päring",
-  "booking.sending": "Saatmine...",
-  "booking.success": "Aitäh! Sinu päring saadeti edukalt.",
-  "booking.error": "Praegu ei õnnestunud saata. Proovi uuesti või kirjuta mulle e-postile.",
-
   "contacts.title": "Küsimuste korral kirjuta e-postile või sotsiaalmeediasse.",
   "contacts.address": "Aadress:",
   "contacts.addressValue": "Eesti",

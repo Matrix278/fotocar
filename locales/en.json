@@ -50,18 +50,6 @@
   "reviews.subtitle": "Real reviews from Google for Fotocar",
   "reviews.leave": "Leave a Google Review",
 
-  "booking.title": "Book a Photoshoot",
-  "booking.subtitle": "Tell me about your car and I'll get back to you quickly.",
-  "booking.name": "Name",
-  "booking.email": "Email",
-  "booking.phone": "Phone",
-  "booking.car": "Car model",
-  "booking.message": "Message",
-  "booking.submit": "Send Request",
-  "booking.sending": "Sending...",
-  "booking.success": "Thanks! Your request was sent successfully.",
-  "booking.error": "Couldn't send right now. Please try again or email me directly.",
-
   "contacts.title": "For inquiries, email me or reach out via social media.",
   "contacts.address": "Address:",
   "contacts.addressValue": "Estonia",
