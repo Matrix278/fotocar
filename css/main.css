@@ -1,11 +1,45 @@
+:root {
+  --fc-blue: #1e6cf7;
+  --fc-blue-dark: #0a4bcb;
+  --fc-blue-soft: #e8f0ff;
+}
+
 body {
   font-family: "Annapurna SIL", serif;
   font-weight: 400;
   font-style: normal;
 }
 
+/* Bootstrap primary override → blue accent */
+.bg-primary {
+  background-color: var(--fc-blue) !important;
+}
+.text-primary {
+  color: var(--fc-blue) !important;
+}
+.btn-primary {
+  background-color: var(--fc-blue);
+  border-color: var(--fc-blue);
+}
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: var(--fc-blue-dark);
+  border-color: var(--fc-blue-dark);
+}
+.btn-outline-primary {
+  color: var(--fc-blue);
+  border-color: var(--fc-blue);
+}
+.btn-outline-primary:hover,
+.btn-outline-primary.active {
+  background-color: var(--fc-blue);
+  border-color: var(--fc-blue);
+  color: #fff;
+}
+
 .homeBackground {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+  background-image:
+    linear-gradient(rgba(10, 30, 70, 0.55), rgba(10, 30, 70, 0.55)),
     url("../images/artjom_background.webp");
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,5 +59,179 @@ body {
 }
 
 section[id] {
-  scroll-margin-top: 80px; /* Adjust this value to match navbar height */
+  scroll-margin-top: 80px;
+}
+
+/* Language switcher */
+.language-switcher {
+  display: inline-flex;
+  gap: 0.25rem;
+}
+.language-switcher .lang-btn {
+  min-width: 42px;
+  font-weight: 600;
+}
+
+/* Services */
+.services-section {
+  background: linear-gradient(180deg, #ffffff 0%, var(--fc-blue-soft) 100%);
+}
+.service-card {
+  background: #fff;
+  border: 1px solid rgba(30, 108, 247, 0.12);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+.service-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--fc-blue);
+  box-shadow: 0 0.75rem 1.5rem rgba(30, 108, 247, 0.15) !important;
+}
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background: var(--fc-blue-soft);
+  color: var(--fc-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Before / After slider */
+.ba-slider {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  user-select: none;
+  background: #000;
+}
+.ba-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  pointer-events: none;
+}
+.ba-before-wrap {
+  position: absolute;
+  inset: 0;
+  width: 50%;
+  overflow: hidden;
+  pointer-events: none;
+}
+.ba-before-wrap .ba-before {
+  /* width is set dynamically via JS to compensate clipping */
+  width: 200%;
+  max-width: none;
+}
+.ba-range {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  appearance: none;
+  -webkit-appearance: none;
+  background: transparent;
+  cursor: ew-resize;
+  z-index: 3;
+}
+.ba-range::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: ew-resize;
+}
+.ba-range::-moz-range-thumb {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  border: none;
+  cursor: ew-resize;
+}
+.ba-range::-moz-range-track {
+  background: transparent;
+}
+.ba-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 3px;
+  background: #fff;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 2;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+}
+.ba-handle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--fc-blue);
+  border: 3px solid #fff;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.3);
+}
+.ba-handle i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1;
+  font-size: 0.95rem;
+}
+.ba-label {
+  position: absolute;
+  top: 12px;
+  padding: 0.25rem 0.6rem;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  border-radius: 0.25rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+  z-index: 2;
+  pointer-events: none;
+}
+.ba-label-before {
+  left: 12px;
+}
+.ba-label-after {
+  right: 12px;
+}
+
+/* Reviews */
+.review-card {
+  background: #fff;
+  border-left: 4px solid var(--fc-blue);
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+.review-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* SEO badge tweaks */
+.badge.bg-primary {
+  font-weight: 500;
+  padding: 0.55em 0.9em;
+  font-size: 0.85rem;
 }

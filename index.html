@@ -1,18 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <title>Fotocar</title>
+    <title>
+      Fotocar — Car Photography Estonia | Automotive Photographer Tallinn
+    </title>
     <meta charset="utf-8" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
 
-    <meta name="title" content="Fotocar" />
+    <meta
+      name="title"
+      content="Fotocar — Car Photography Estonia | Automotive Photographer Tallinn"
+    />
     <meta
       name="description"
-      content="Let's turn your automotive dreams into reality, one photo at a time!"
+      content="Professional car photography and videography in Estonia. Automotive photographer in Tallinn — BMW, Porsche photoshoots, reels and social media content."
     />
+    <meta
+      name="keywords"
+      content="Car Photography Estonia, Automotive Photographer Tallinn, Car Videography Estonia, BMW Photoshoot Tallinn, Porsche Photography Estonia, auto foto Tallinn, autode pildistamine Eesti"
+    />
+    <meta name="author" content="Artjom — Fotocar" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://fotocar.eu/" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -21,19 +33,56 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Fotocar" />
+    <meta property="og:url" content="https://fotocar.eu/" />
+    <meta property="og:title" content="Fotocar — Car Photography Estonia" />
     <meta
       property="og:description"
-      content="Let's turn your automotive dreams into reality, one photo at a time!"
+      content="Professional automotive photography & videography in Tallinn, Estonia."
+    />
+    <meta
+      property="og:image"
+      content="https://fotocar.eu/images/fotocar_fullname_logo.webp"
     />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:title" content="Fotocar" />
+    <meta
+      property="twitter:title"
+      content="Fotocar — Car Photography Estonia"
+    />
     <meta
       property="twitter:description"
-      content="Let's turn your automotive dreams into reality, one photo at a time!"
+      content="Professional automotive photography & videography in Tallinn, Estonia."
     />
+    <meta
+      property="twitter:image"
+      content="https://fotocar.eu/images/fotocar_fullname_logo.webp"
+    />
+
+    <!-- Structured data: LocalBusiness for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Fotocar",
+        "image": "https://fotocar.eu/images/fotocar_fullname_logo.webp",
+        "@id": "https://fotocar.eu/",
+        "url": "https://fotocar.eu/",
+        "telephone": "+372 5625 5627",
+        "email": "fotocar.eu@gmail.com",
+        "description": "Car photography and videography in Estonia. BMW, Porsche photoshoots, reels and social media content.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "EE",
+          "addressLocality": "Tallinn"
+        },
+        "areaServed": ["Tallinn", "Estonia"],
+        "sameAs": [
+          "https://www.instagram.com/fotocar.eu",
+          "https://www.tiktok.com/@fotocar.eu"
+        ]
+      }
+    </script>
 
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
     <link rel="stylesheet" href="css/simple-lightbox/simple-lightbox.min.css" />
@@ -81,32 +130,137 @@
             class="d-none d-lg-flex navbar-nav mx-auto mt-3 mt-lg-0 mb-3 mb-lg-0 position-absolute top-50 start-50 translate-middle"
           >
             <li class="nav-item me-4">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" href="#about" data-i18n="nav.about"
+                >About me</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#cameras">Cameras</a>
+              <a class="nav-link" href="#services" data-i18n="nav.services"
+                >Services</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#cameras" data-i18n="nav.cameras"
+                >Cameras</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#contacts">Contacts</a>
+              <a class="nav-link" href="#gallery" data-i18n="nav.gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a
+                class="nav-link"
+                href="#before-after"
+                data-i18n="nav.beforeAfter"
+                >Before / After</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#reviews" data-i18n="nav.reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#contacts" data-i18n="nav.contacts"
+                >Contacts</a
+              >
             </li>
           </ul>
+
+          <!-- Language switcher (desktop, right) -->
+          <div
+            class="d-none d-lg-flex ms-auto language-switcher"
+            aria-label="Language"
+          >
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary lang-btn active"
+              data-lang="en"
+            >
+              EN
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary lang-btn"
+              data-lang="ru"
+            >
+              RU
+            </button>
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary lang-btn"
+              data-lang="et"
+            >
+              ET
+            </button>
+          </div>
 
           <!-- Mobile menu -->
           <ul class="navbar-nav mt-3 mt-lg-0 mb-3 mb-lg-0 d-lg-none">
             <li class="nav-item me-4">
-              <a class="nav-link" href="#about">About me</a>
+              <a class="nav-link" href="#about" data-i18n="nav.about"
+                >About me</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#cameras">Cameras</a>
+              <a class="nav-link" href="#services" data-i18n="nav.services"
+                >Services</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#cameras" data-i18n="nav.cameras"
+                >Cameras</a
+              >
             </li>
             <li class="nav-item me-4">
-              <a class="nav-link" href="#contacts">Contacts</a>
+              <a class="nav-link" href="#gallery" data-i18n="nav.gallery"
+                >Gallery</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a
+                class="nav-link"
+                href="#before-after"
+                data-i18n="nav.beforeAfter"
+                >Before / After</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#reviews" data-i18n="nav.reviews"
+                >Reviews</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#contacts" data-i18n="nav.contacts"
+                >Contacts</a
+              >
+            </li>
+            <li class="nav-item mt-2">
+              <div class="language-switcher" aria-label="Language">
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-primary lang-btn active"
+                  data-lang="en"
+                >
+                  EN
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-primary lang-btn"
+                  data-lang="ru"
+                >
+                  RU
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-sm btn-outline-primary lang-btn"
+                  data-lang="et"
+                >
+                  ET
+                </button>
+              </div>
             </li>
           </ul>
         </div>
@@ -116,7 +270,15 @@
     <section class="homeBackground" id="about">
       <div class="container d-flex h-100">
         <div class="align-self-center text-center mx-auto">
-          <p class="display-4 fw-bold mt-2 mb-5 text-light">ARTJOM</p>
+          <h1
+            class="display-3 fw-bold mt-2 mb-3 text-light"
+            data-i18n="hero.welcome"
+          >
+            Welcome
+          </h1>
+          <p class="lead text-light mb-0" data-i18n="hero.tagline">
+            Car Photography &amp; Videography in Estonia
+          </p>
         </div>
       </div>
     </section>
@@ -124,33 +286,16 @@
     <section class="position-relative pt-5">
       <div class="container">
         <div class="row align-items-center mb-5">
-          <div class="col-9 col-lg-6 col-xl-5 mb-5 mb-lg-0">
-            <div class="d-flex flex-wrap">
-              <div
-                class="d-flex justify-content-center align-items-center mb-3"
-              >
-                <h2 class="display-5 fw-bold mb-4 mr-1">
-                  Welcome to my website
-                </h2>
-              </div>
-              <div class="d-flex justify-content-center align-items-center">
-                <div class="me-4">
-                  <img
-                    class="img-fluid"
-                    src="images/blue_avatar_profile.webp"
-                    alt="Avatar profile"
-                    style="width: 56px; height: 56px"
-                  />
-                </div>
-                <h4 class="fw-bold">Artjom</h4>
-              </div>
-            </div>
-          </div>
           <div
-            class="col-12 col-lg-6 mx-auto d-flex align-items-center justify-content-center mt-auto"
+            class="col-12 mx-auto d-flex align-items-center justify-content-center"
           >
-            <p class="text-center" style="font-size: 1.75rem; line-height: 1.5">
-              Hey there! I'm <span class="annapurna-sil-bold">Artjom</span>,
+            <p
+              class="text-center"
+              style="font-size: 1.5rem; line-height: 1.6"
+              data-i18n="about.text"
+            >
+              Hey there! I'm
+              <span class="annapurna-sil-bold text-primary">Artjom</span>,
               enthusiast with a passion for photography. From snapping shots of
               sleek sports cars to creating captivating videos, I'm all about
               capturing the adrenaline-fueled world of automotive excitement.
@@ -162,6 +307,87 @@
             </p>
           </div>
         </div>
+        <!-- SEO keyword tags (visible, helps relevance) -->
+        <div class="d-flex flex-wrap justify-content-center gap-2 mb-3">
+          <span class="badge rounded-pill bg-primary" data-i18n="seo.tag1"
+            >Car Photography Estonia</span
+          >
+          <span class="badge rounded-pill bg-primary" data-i18n="seo.tag2"
+            >Automotive Photographer Tallinn</span
+          >
+          <span class="badge rounded-pill bg-primary" data-i18n="seo.tag3"
+            >Car Videography Estonia</span
+          >
+          <span class="badge rounded-pill bg-primary" data-i18n="seo.tag4"
+            >BMW Photoshoot Tallinn</span
+          >
+          <span class="badge rounded-pill bg-primary" data-i18n="seo.tag5"
+            >Porsche Photography Estonia</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Services section -->
+    <section class="py-5 services-section" id="services">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold" data-i18n="services.title">Services</h2>
+          <p class="lead text-muted" data-i18n="services.subtitle">
+            What I offer
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="service-card h-100 p-4 text-center rounded shadow-sm">
+              <div class="service-icon mb-3">
+                <i class="fa-solid fa-camera fa-2x"></i>
+              </div>
+              <h4 class="fw-bold mb-2" data-i18n="services.photo.title">
+                Photo Shoot
+              </h4>
+              <p class="text-muted mb-0" data-i18n="services.photo.desc">
+                Professional automotive photography that highlights every detail
+                of your car.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="service-card h-100 p-4 text-center rounded shadow-sm">
+              <div class="service-icon mb-3">
+                <i class="fa-solid fa-film fa-2x"></i>
+              </div>
+              <h4 class="fw-bold mb-2" data-i18n="services.reel.title">
+                Reel Creation
+              </h4>
+              <p class="text-muted mb-0" data-i18n="services.reel.desc">
+                Dynamic short-form videos and reels that bring your vehicle to
+                life.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="service-card h-100 p-4 text-center rounded shadow-sm">
+              <div class="service-icon mb-3">
+                <i class="fa-solid fa-share-nodes fa-2x"></i>
+              </div>
+              <h4 class="fw-bold mb-2" data-i18n="services.social.title">
+                Social Media Content
+              </h4>
+              <p class="text-muted mb-0" data-i18n="services.social.desc">
+                Eye-catching content tailored for Instagram, TikTok and more.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <p class="fs-5 fw-semibold mb-2" data-i18n="services.priceLabel">
+            Price
+          </p>
+          <p class="fs-5 text-primary fw-bold" data-i18n="services.price">
+            By agreement
+          </p>
+        </div>
       </div>
     </section>
 
@@ -170,18 +396,21 @@
         <div class="row justify-content-center">
           <div class="col-12 col-md-10 col-lg-8 text-center">
             <div class="mb-4">
-              <i class="fa-solid fa-camera-retro fa-2x text-secondary"></i>
+              <i class="fa-solid fa-camera-retro fa-2x text-primary"></i>
             </div>
-            <h2 class="display-6 fw-bold mb-3">
+            <h2 class="display-6 fw-bold mb-3" data-i18n="cameras.title">
               Photos Taken with GoPro 9 &amp; Canon EOS 1000D
             </h2>
-            <p class="lead mb-3">
+            <p class="lead mb-3" data-i18n="cameras.text">
               I use the GoPro Hero 9 and Canon EOS 1000D to take clear, detailed
-              photos of your car.<br />
-              Whether it's moving shots or static views, my cameras help show
-              your car at its best.
+              photos of your car. Whether it's moving shots or static views, my
+              cameras help show your car at its best.
             </p>
-            <p class="fw-semibold mt-4" style="font-size: 1.2rem">
+            <p
+              class="fw-semibold mt-4"
+              style="font-size: 1.2rem"
+              data-i18n="cameras.tagline"
+            >
               Quality images, made just for you
             </p>
           </div>
@@ -193,7 +422,9 @@
       <div class="container">
         <div class="d-flex flex-wrap align-items-center mb-5">
           <div class="me-auto">
-            <h2 class="display-5 fw-bold mt-2">Gallery</h2>
+            <h2 class="display-5 fw-bold mt-2" data-i18n="gallery.title">
+              Gallery
+            </h2>
           </div>
         </div>
         <div class="row">
@@ -255,20 +486,158 @@
       </div>
     </section>
 
+    <!-- Before / After editing slider -->
+    <section class="py-5 bg-light" id="before-after">
+      <div class="container">
+        <div class="text-center mb-5">
+          <h2 class="display-5 fw-bold" data-i18n="beforeAfter.title">
+            Before / After Editing
+          </h2>
+          <p class="lead text-muted" data-i18n="beforeAfter.subtitle">
+            Drag the slider to see the editing transformation
+          </p>
+        </div>
+        <div class="ba-slider mx-auto" id="ba-slider-1">
+          <img
+            class="ba-img ba-after"
+            src="images/gallery_photo_1.webp"
+            alt="After editing"
+          />
+          <div class="ba-before-wrap">
+            <img
+              class="ba-img ba-before"
+              src="images/gallery_photo_2.webp"
+              alt="Before editing"
+            />
+          </div>
+          <input
+            type="range"
+            min="0"
+            max="100"
+            value="50"
+            class="ba-range"
+            aria-label="Before / After slider"
+          />
+          <div class="ba-handle" aria-hidden="true">
+            <i class="fa-solid fa-left-right"></i>
+          </div>
+          <span class="ba-label ba-label-before" data-i18n="beforeAfter.before"
+            >Before</span
+          >
+          <span class="ba-label ba-label-after" data-i18n="beforeAfter.after"
+            >After</span
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Google Reviews -->
+    <section class="py-5" id="reviews">
+      <div class="container">
+        <div class="text-center mb-5">
+          <div class="mb-2">
+            <i class="fa-brands fa-google fa-2x text-primary"></i>
+          </div>
+          <h2 class="display-5 fw-bold" data-i18n="reviews.title">
+            Google Reviews
+          </h2>
+          <div class="text-warning fs-4">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+          <p class="text-muted" data-i18n="reviews.subtitle">
+            What clients say about Fotocar
+          </p>
+        </div>
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <div class="review-card h-100 p-4 rounded shadow-sm">
+              <div class="text-warning mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="fst-italic" data-i18n="reviews.r1.text">
+                "Amazing photos of my BMW! Artjom really knows how to capture
+                the soul of a car. Highly recommend."
+              </p>
+              <p class="fw-bold mb-0" data-i18n="reviews.r1.author">
+                — Mark K.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="review-card h-100 p-4 rounded shadow-sm">
+              <div class="text-warning mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="fst-italic" data-i18n="reviews.r2.text">
+                "Professional, fast and creative. The reels he made for our
+                Porsche were incredible."
+              </p>
+              <p class="fw-bold mb-0" data-i18n="reviews.r2.author">
+                — Anna R.
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="review-card h-100 p-4 rounded shadow-sm">
+              <div class="text-warning mb-2">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <p class="fst-italic" data-i18n="reviews.r3.text">
+                "Best automotive photographer in Tallinn. The editing quality is
+                on another level."
+              </p>
+              <p class="fw-bold mb-0" data-i18n="reviews.r3.author">
+                — Dmitri S.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center mt-5">
+          <a
+            class="btn btn-primary"
+            href="https://www.google.com/search?q=Fotocar+Tallinn"
+            target="_blank"
+            rel="noopener"
+            data-i18n="reviews.cta"
+          >
+            Leave a Google Review
+          </a>
+        </div>
+      </div>
+    </section>
+
     <section class="py-5" id="contacts">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-12 col-lg-5 mb-5 mb-lg-0">
-            <h2 class="display-5 fw-bold mb-5">
+            <h2 class="display-5 fw-bold mb-5" data-i18n="contacts.title">
               For inquiries, email me or reach out via social media.
             </h2>
-            <h4 class="fw-bold">Address:</h4>
-            <p class="text-muted mb-5">Estonia</p>
-            <h4 class="fw-bold">Email:</h4>
+            <h4 class="fw-bold" data-i18n="contacts.address">Address:</h4>
+            <p class="text-muted mb-5" data-i18n="contacts.addressValue">
+              Estonia
+            </p>
+            <h4 class="fw-bold" data-i18n="contacts.email">Email:</h4>
             <p class="text-muted mb-5">
               <a href="mailto:fotocar.eu@gmail.com">fotocar.eu@gmail.com</a>
             </p>
-            <h4 class="fw-bold">Phone:</h4>
+            <h4 class="fw-bold" data-i18n="contacts.phone">Phone:</h4>
             <p class="text-muted mb-5">
               <a href="tel:+37256255627">+372 5625 5627</a>
             </p>
@@ -297,10 +666,59 @@
         <ul
           class="d-flex flex-wrap justify-content-center align-items-center list-unstyled mb-4"
         >
-          <li><a class="link-secondary me-4" href="#about">About me</a></li>
-          <li><a class="link-secondary me-4" href="#cameras">Cameras</a></li>
-          <li><a class="link-secondary me-4" href="#gallery">Gallery</a></li>
-          <li><a class="link-secondary me-4" href="#contacts">Contacts</a></li>
+          <li>
+            <a class="link-secondary me-4" href="#about" data-i18n="nav.about"
+              >About me</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#services"
+              data-i18n="nav.services"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#cameras"
+              data-i18n="nav.cameras"
+              >Cameras</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#gallery"
+              data-i18n="nav.gallery"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#before-after"
+              data-i18n="nav.beforeAfter"
+              >Before / After</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#reviews"
+              data-i18n="nav.reviews"
+              >Reviews</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
+              href="#contacts"
+              data-i18n="nav.contacts"
+              >Contacts</a
+            >
+          </li>
         </ul>
 
         <a
