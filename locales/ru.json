@@ -1,0 +1,53 @@
+{
+  "nav.about": "Обо мне",
+  "nav.services": "Услуги",
+  "nav.cameras": "Камеры",
+  "nav.gallery": "Галерея",
+  "nav.beforeAfter": "До / После",
+  "nav.reviews": "Отзывы",
+  "nav.contacts": "Контакты",
+
+  "hero.welcome": "Добро пожаловать",
+  "hero.tagline": "Фото и видеосъёмка автомобилей в Эстонии",
+
+  "about.text": "Привет! Меня зовут <span class=\"annapurna-sil-bold text-primary\">Артём</span>, и я увлечён автомобильной фотографией. От динамичных кадров спорткаров до захватывающих видео — я снимаю мир автомобилей со страстью и вниманием к деталям. Благодаря качественной обработке я превращаю каждое фото в маленький шедевр, сохраняющий характер вашей машины. Загляните в галерею и присоединяйтесь к этому драйвовому путешествию по миру автомобилей. Давайте превратим ваши автомобильные мечты в реальность — кадр за кадром!",
+
+  "seo.tag1": "Автофотосъёмка Эстония",
+  "seo.tag2": "Автофотограф Таллинн",
+  "seo.tag3": "Видеосъёмка авто Эстония",
+  "seo.tag4": "Фотосессия BMW Таллинн",
+  "seo.tag5": "Фотосъёмка Porsche Эстония",
+
+  "services.title": "Услуги",
+  "services.subtitle": "Что я предлагаю",
+  "services.photo.title": "Фотосессия",
+  "services.photo.desc": "Профессиональная автомобильная фотосъёмка, подчёркивающая каждую деталь вашего автомобиля.",
+  "services.reel.title": "Создание Reels",
+  "services.reel.desc": "Динамичные короткие видео и Reels, которые оживят ваш автомобиль.",
+  "services.social.title": "Контент для соцсетей",
+  "services.social.desc": "Яркий контент, созданный для Instagram, TikTok и других платформ.",
+  "services.priceLabel": "Цена",
+  "services.price": "По договорённости",
+
+  "cameras.title": "Снято на GoPro 9 и Canon EOS 1000D",
+  "cameras.text": "Я использую GoPro Hero 9 и Canon EOS 1000D для чётких и детальных снимков вашего автомобиля. Динамика или статика — мои камеры покажут машину с лучшей стороны.",
+  "cameras.tagline": "Качественные снимки — лично для вас",
+
+  "gallery.title": "Галерея",
+
+  "beforeAfter.title": "До / После обработки",
+  "beforeAfter.subtitle": "Перетащите ползунок, чтобы увидеть результат обработки",
+  "beforeAfter.before": "До",
+  "beforeAfter.after": "После",
+
+  "reviews.title": "Отзывы Google",
+  "reviews.subtitle": "Настоящие отзывы Google о Fotocar",
+  "reviews.viewAll": "Смотреть все отзывы в Google",
+  "reviews.leave": "Оставить отзыв в Google",
+
+  "contacts.title": "По вопросам пишите на email или в социальные сети.",
+  "contacts.address": "Адрес:",
+  "contacts.addressValue": "Эстония",
+  "contacts.email": "Эл. почта:",
+  "contacts.phone": "Телефон:"
+}

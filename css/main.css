@@ -45,7 +45,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-blend-mode: overlay;
-  height: 70vh;
+  height: 80vh;
   width: 100%;
   z-index: 1;
   overflow-x: hidden;
@@ -112,6 +112,11 @@ section[id] {
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
   user-select: none;
   background: #000;
+  cursor: ew-resize;
+  touch-action: none;
+}
+.ba-slider.ba-dragging {
+  cursor: grabbing;
 }
 .ba-img {
   position: absolute;
@@ -130,38 +135,11 @@ section[id] {
   pointer-events: none;
 }
 .ba-before-wrap .ba-before {
-  /* width is set dynamically via JS to compensate clipping */
+  /* width is set dynamically via JS to compensate for clipping */
   width: 200%;
   max-width: none;
-}
-.ba-range {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  margin: 0;
-  appearance: none;
-  -webkit-appearance: none;
-  background: transparent;
-  cursor: ew-resize;
-  z-index: 3;
-}
-.ba-range::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  cursor: ew-resize;
-}
-.ba-range::-moz-range-thumb {
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  border: none;
-  cursor: ew-resize;
-}
-.ba-range::-moz-range-track {
-  background: transparent;
+  /* Simulates an unedited / raw look as a placeholder */
+  filter: saturate(0.55) contrast(0.9) brightness(0.92);
 }
 .ba-handle {
   position: absolute;
@@ -194,8 +172,9 @@ section[id] {
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
-  z-index: 1;
+  z-index: 3;
   font-size: 0.95rem;
+  pointer-events: none;
 }
 .ba-label {
   position: absolute;
@@ -214,6 +193,13 @@ section[id] {
 }
 .ba-label-after {
   right: 12px;
+}
+
+/* Google reviews embed */
+.google-embed iframe {
+  border: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Reviews */

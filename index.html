@@ -500,24 +500,18 @@
         <div class="ba-slider mx-auto" id="ba-slider-1">
           <img
             class="ba-img ba-after"
-            src="images/gallery_photo_1.webp"
-            alt="After editing"
+            src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80&auto=format&fit=crop"
+            alt="After editing — edited car"
+            loading="lazy"
           />
           <div class="ba-before-wrap">
             <img
               class="ba-img ba-before"
-              src="images/gallery_photo_2.webp"
-              alt="Before editing"
+              src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?w=1600&q=80&auto=format&fit=crop"
+              alt="Before editing — raw car"
+              loading="lazy"
             />
           </div>
-          <input
-            type="range"
-            min="0"
-            max="100"
-            value="50"
-            class="ba-range"
-            aria-label="Before / After slider"
-          />
           <div class="ba-handle" aria-hidden="true">
             <i class="fa-solid fa-left-right"></i>
           </div>
@@ -541,80 +535,42 @@
           <h2 class="display-5 fw-bold" data-i18n="reviews.title">
             Google Reviews
           </h2>
-          <div class="text-warning fs-4">
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-          </div>
           <p class="text-muted" data-i18n="reviews.subtitle">
-            What clients say about Fotocar
+            Real reviews from Google for Fotocar
           </p>
         </div>
-        <div class="row g-4">
-          <div class="col-12 col-md-4">
-            <div class="review-card h-100 p-4 rounded shadow-sm">
-              <div class="text-warning mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="fst-italic" data-i18n="reviews.r1.text">
-                "Amazing photos of my BMW! Artjom really knows how to capture
-                the soul of a car. Highly recommend."
-              </p>
-              <p class="fw-bold mb-0" data-i18n="reviews.r1.author">
-                — Mark K.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="review-card h-100 p-4 rounded shadow-sm">
-              <div class="text-warning mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="fst-italic" data-i18n="reviews.r2.text">
-                "Professional, fast and creative. The reels he made for our
-                Porsche were incredible."
-              </p>
-              <p class="fw-bold mb-0" data-i18n="reviews.r2.author">
-                — Anna R.
-              </p>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="review-card h-100 p-4 rounded shadow-sm">
-              <div class="text-warning mb-2">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-              </div>
-              <p class="fst-italic" data-i18n="reviews.r3.text">
-                "Best automotive photographer in Tallinn. The editing quality is
-                on another level."
-              </p>
-              <p class="fw-bold mb-0" data-i18n="reviews.r3.author">
-                — Dmitri S.
-              </p>
-            </div>
-          </div>
+
+        <!-- Live Google Maps embed of the Fotocar place (shows real rating, photos, reviews) -->
+        <div
+          class="ratio ratio-16x9 rounded shadow-sm overflow-hidden mb-4 google-embed"
+        >
+          <iframe
+            src="https://maps.google.com/maps?q=Fotocar+Tallinn&t=&z=15&ie=UTF8&iwloc=B&output=embed"
+            title="Fotocar on Google Maps"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen
+          ></iframe>
         </div>
-        <div class="text-center mt-5">
+
+        <div
+          class="text-center d-flex flex-wrap justify-content-center gap-3 mt-4"
+        >
           <a
-            class="btn btn-primary"
-            href="https://www.google.com/search?q=Fotocar+Tallinn"
+            class="btn btn-outline-primary"
+            href="https://maps.app.goo.gl/StJyxPyxp7ocw3hA9"
             target="_blank"
             rel="noopener"
-            data-i18n="reviews.cta"
+            data-i18n="reviews.viewAll"
+          >
+            View all reviews on Google
+          </a>
+          <a
+            class="btn btn-primary"
+            href="https://maps.app.goo.gl/StJyxPyxp7ocw3hA9"
+            target="_blank"
+            rel="noopener"
+            data-i18n="reviews.leave"
           >
             Leave a Google Review
           </a>

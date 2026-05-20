@@ -1,0 +1,53 @@
+{
+  "nav.about": "About me",
+  "nav.services": "Services",
+  "nav.cameras": "Cameras",
+  "nav.gallery": "Gallery",
+  "nav.beforeAfter": "Before / After",
+  "nav.reviews": "Reviews",
+  "nav.contacts": "Contacts",
+
+  "hero.welcome": "Welcome",
+  "hero.tagline": "Car Photography & Videography in Estonia",
+
+  "about.text": "Hey there! I'm <span class=\"annapurna-sil-bold text-primary\">Artjom</span>, enthusiast with a passion for photography. From snapping shots of sleek sports cars to creating captivating videos, I'm all about capturing the adrenaline-fueled world of automotive excitement. With my editing skills, I can transform your car into a miniature masterpiece, preserving its essence in a whole new way. Check out my work on the website and join me on this thrilling journey through the world of sports cars. Let's turn your automotive dreams into reality, one photo at a time!",
+
+  "seo.tag1": "Car Photography Estonia",
+  "seo.tag2": "Automotive Photographer Tallinn",
+  "seo.tag3": "Car Videography Estonia",
+  "seo.tag4": "BMW Photoshoot Tallinn",
+  "seo.tag5": "Porsche Photography Estonia",
+
+  "services.title": "Services",
+  "services.subtitle": "What I offer",
+  "services.photo.title": "Photo Shoot",
+  "services.photo.desc": "Professional automotive photography that highlights every detail of your car.",
+  "services.reel.title": "Reel Creation",
+  "services.reel.desc": "Dynamic short-form videos and reels that bring your vehicle to life.",
+  "services.social.title": "Social Media Content",
+  "services.social.desc": "Eye-catching content tailored for Instagram, TikTok and more.",
+  "services.priceLabel": "Price",
+  "services.price": "By agreement",
+
+  "cameras.title": "Photos Taken with GoPro 9 & Canon EOS 1000D",
+  "cameras.text": "I use the GoPro Hero 9 and Canon EOS 1000D to take clear, detailed photos of your car. Whether it's moving shots or static views, my cameras help show your car at its best.",
+  "cameras.tagline": "Quality images, made just for you",
+
+  "gallery.title": "Gallery",
+
+  "beforeAfter.title": "Before / After Editing",
+  "beforeAfter.subtitle": "Drag the slider to see the editing transformation",
+  "beforeAfter.before": "Before",
+  "beforeAfter.after": "After",
+
+  "reviews.title": "Google Reviews",
+  "reviews.subtitle": "Real reviews from Google for Fotocar",
+  "reviews.viewAll": "View all reviews on Google",
+  "reviews.leave": "Leave a Google Review",
+
+  "contacts.title": "For inquiries, email me or reach out via social media.",
+  "contacts.address": "Address:",
+  "contacts.addressValue": "Estonia",
+  "contacts.email": "Email:",
+  "contacts.phone": "Phone:"
+}

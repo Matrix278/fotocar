@@ -1,0 +1,53 @@
+{
+  "nav.about": "Minust",
+  "nav.services": "Teenused",
+  "nav.cameras": "Kaamerad",
+  "nav.gallery": "Galerii",
+  "nav.beforeAfter": "Enne / Pärast",
+  "nav.reviews": "Arvustused",
+  "nav.contacts": "Kontakt",
+
+  "hero.welcome": "Tere tulemast",
+  "hero.tagline": "Autode foto- ja videograafia Eestis",
+
+  "about.text": "Tere! Olen <span class=\"annapurna-sil-bold text-primary\">Artjom</span>, autofotograafia entusiast. Sportautode dünaamilistest kaadritest haaravate videoteni — minu kirg on jäädvustada autode põnevat maailma. Tänu kvaliteetsele töötlusele muudan iga foto väikeseks meistriteoseks, mis säilitab sinu auto olemuse. Vaata minu töid ja liitu selle põneva teekonnaga autode maailmas. Muudame sinu autounistused üheskoos reaalsuseks — üks foto korraga!",
+
+  "seo.tag1": "Autode pildistamine Eestis",
+  "seo.tag2": "Autofotograaf Tallinnas",
+  "seo.tag3": "Autode videograafia Eestis",
+  "seo.tag4": "BMW fotosessioon Tallinnas",
+  "seo.tag5": "Porsche pildistamine Eestis",
+
+  "services.title": "Teenused",
+  "services.subtitle": "Mida ma pakun",
+  "services.photo.title": "Fotosessioon",
+  "services.photo.desc": "Professionaalne autode pildistamine, mis toob esile iga detaili sinu autol.",
+  "services.reel.title": "Reels'ide loomine",
+  "services.reel.desc": "Dünaamilised lühivideod ja Reels'id, mis äratavad sinu auto ellu.",
+  "services.social.title": "Sotsiaalmeedia sisu",
+  "services.social.desc": "Pilkupüüdev sisu Instagrami, TikToki ja muude platvormide jaoks.",
+  "services.priceLabel": "Hind",
+  "services.price": "Kokkuleppel",
+
+  "cameras.title": "Pildistatud GoPro 9 ja Canon EOS 1000D-ga",
+  "cameras.text": "Kasutan GoPro Hero 9 ja Canon EOS 1000D kaameraid selgete ja detailirohkete fotode tegemiseks. Olgu liikuvad kaadrid või staatilised vaated — minu kaamerad näitavad sinu autot parimast küljest.",
+  "cameras.tagline": "Kvaliteetsed pildid — just sinu jaoks",
+
+  "gallery.title": "Galerii",
+
+  "beforeAfter.title": "Enne / Pärast töötlust",
+  "beforeAfter.subtitle": "Liiguta liugurit, et näha töötluse tulemust",
+  "beforeAfter.before": "Enne",
+  "beforeAfter.after": "Pärast",
+
+  "reviews.title": "Google'i arvustused",
+  "reviews.subtitle": "Päris arvustused Google'is Fotocari kohta",
+  "reviews.viewAll": "Vaata kõiki Google'i arvustusi",
+  "reviews.leave": "Jäta Google'i arvustus",
+
+  "contacts.title": "Küsimuste korral kirjuta e-postile või sotsiaalmeediasse.",
+  "contacts.address": "Aadress:",
+  "contacts.addressValue": "Eesti",
+  "contacts.email": "E-post:",
+  "contacts.phone": "Telefon:"
+}
