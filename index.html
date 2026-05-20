@@ -625,6 +625,7 @@
                 Tell me about your car and I'll get back to you quickly.
               </p>
               <form
+                id="booking-form"
                 action="https://formsubmit.co/fotocar.eu@gmail.com"
                 method="POST"
               >
@@ -634,6 +635,7 @@
                   value="New Fotocar booking request"
                 />
                 <input type="hidden" name="_captcha" value="false" />
+                <input type="text" name="_honey" style="display: none" />
                 <div class="row g-3">
                   <div class="col-12 col-md-6">
                     <label
@@ -713,12 +715,20 @@
                     class="col-12 d-grid d-sm-flex justify-content-sm-center"
                   >
                     <button
+                      id="booking-submit"
                       class="btn btn-primary btn-lg px-4"
                       type="submit"
                       data-i18n="booking.submit"
                     >
                       Send Request
                     </button>
+                  </div>
+                  <div class="col-12 text-center">
+                    <output
+                      id="booking-status"
+                      class="mb-0 text-muted"
+                      aria-live="polite"
+                    ></output>
                   </div>
                 </div>
               </form>

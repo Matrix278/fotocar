@@ -58,6 +58,9 @@
   "booking.car": "Car model",
   "booking.message": "Message",
   "booking.submit": "Send Request",
+  "booking.sending": "Sending...",
+  "booking.success": "Thanks! Your request was sent successfully.",
+  "booking.error": "Couldn't send right now. Please try again or email me directly.",
 
   "contacts.title": "For inquiries, email me or reach out via social media.",
   "contacts.address": "Address:",

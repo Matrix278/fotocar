@@ -58,6 +58,9 @@
   "booking.car": "Модель автомобиля",
   "booking.message": "Сообщение",
   "booking.submit": "Отправить заявку",
+  "booking.sending": "Отправка...",
+  "booking.success": "Спасибо! Ваша заявка успешно отправлена.",
+  "booking.error": "Сейчас не удалось отправить. Попробуйте ещё раз или напишите мне на email.",
 
   "contacts.title": "По вопросам пишите на email или в социальные сети.",
   "contacts.address": "Адрес:",

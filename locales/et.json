@@ -58,6 +58,9 @@
   "booking.car": "Auto mudel",
   "booking.message": "Sõnum",
   "booking.submit": "Saada päring",
+  "booking.sending": "Saatmine...",
+  "booking.success": "Aitäh! Sinu päring saadeti edukalt.",
+  "booking.error": "Praegu ei õnnestunud saata. Proovi uuesti või kirjuta mulle e-postile.",
 
   "contacts.title": "Küsimuste korral kirjuta e-postile või sotsiaalmeediasse.",
   "contacts.address": "Aadress:",
