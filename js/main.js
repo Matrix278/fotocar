@@ -12,9 +12,40 @@
 const lightbox = new SimpleLightbox('a[data-lightbox="gallery"]');
 
 //------------------------ i18n: EN / RU / ET (from /locales/*.json) ------------------------//
-const SUPPORTED_LANGS = ["en", "ru", "et"];
+const SUPPORTED_LANGS = new Set(["en", "ru", "et"]);
 const DEFAULT_LANG = "en";
 const localeCache = {};
+
+function updateSeoMetadata(dict) {
+  if (dict["seo.title"]) {
+    document.title = dict["seo.title"];
+    const ogTitle = document.querySelector("#meta-og-title");
+    const twTitle = document.querySelector("#meta-twitter-title");
+    if (ogTitle) ogTitle.setAttribute("content", dict["seo.title"]);
+    if (twTitle) twTitle.setAttribute("content", dict["seo.title"]);
+  }
+  if (dict["seo.description"]) {
+    const metaDescription = document.querySelector("#meta-description");
+    const ogDescription = document.querySelector("#meta-og-description");
+    const twDescription = document.querySelector("#meta-twitter-description");
+    if (metaDescription)
+      metaDescription.setAttribute("content", dict["seo.description"]);
+    if (ogDescription)
+      ogDescription.setAttribute("content", dict["seo.description"]);
+    if (twDescription)
+      twDescription.setAttribute("content", dict["seo.description"]);
+  }
+}
+
+function syncLangInUrl(lang) {
+  const url = new URL(globalThis.location.href);
+  if (lang === DEFAULT_LANG) {
+    url.searchParams.delete("lang");
+  } else {
+    url.searchParams.set("lang", lang);
+  }
+  globalThis.history.replaceState({}, "", url.toString());
+}
 
 async function loadLocale(lang) {
   if (localeCache[lang]) return localeCache[lang];
@@ -26,7 +57,7 @@ async function loadLocale(lang) {
 }
 
 async function applyLanguage(lang) {
-  if (!SUPPORTED_LANGS.includes(lang)) lang = DEFAULT_LANG;
+  if (!SUPPORTED_LANGS.has(lang)) lang = DEFAULT_LANG;
   let dict;
   try {
     dict = await loadLocale(lang);
@@ -47,11 +78,13 @@ async function applyLanguage(lang) {
   document.querySelectorAll(".lang-btn").forEach((btn) => {
     btn.classList.toggle("active", btn.dataset.lang === lang);
   });
+  updateSeoMetadata(dict);
+  syncLangInUrl(lang);
 
   try {
     localStorage.setItem("fotocar-lang", lang);
-  } catch (_) {
-    // localStorage may be unavailable (private mode); ignore
+  } catch (err) {
+    console.debug("Could not persist language:", err);
   }
 }
 
@@ -63,16 +96,19 @@ document.querySelectorAll(".lang-btn").forEach((btn) => {
   let saved = null;
   try {
     saved = localStorage.getItem("fotocar-lang");
-  } catch (_) {
-    // ignore
+  } catch (err) {
+    console.debug("Could not read saved language:", err);
   }
   const browser = (navigator.language || DEFAULT_LANG)
     .slice(0, 2)
     .toLowerCase();
+  const queryLang = new URLSearchParams(globalThis.location.search).get("lang");
   let initial = DEFAULT_LANG;
-  if (saved && SUPPORTED_LANGS.includes(saved)) {
+  if (queryLang && SUPPORTED_LANGS.has(queryLang)) {
+    initial = queryLang;
+  } else if (saved && SUPPORTED_LANGS.has(saved)) {
     initial = saved;
-  } else if (SUPPORTED_LANGS.includes(browser)) {
+  } else if (SUPPORTED_LANGS.has(browser)) {
     initial = browser;
   }
   applyLanguage(initial);
@@ -127,10 +163,10 @@ document.querySelectorAll(".ba-slider").forEach((slider) => {
 
   slider.addEventListener("mousedown", onStart);
   slider.addEventListener("touchstart", onStart, { passive: false });
-  window.addEventListener("mousemove", onMove);
-  window.addEventListener("touchmove", onMove, { passive: false });
-  window.addEventListener("mouseup", onEnd);
-  window.addEventListener("touchend", onEnd);
+  globalThis.addEventListener("mousemove", onMove);
+  globalThis.addEventListener("touchmove", onMove, { passive: false });
+  globalThis.addEventListener("mouseup", onEnd);
+  globalThis.addEventListener("touchend", onEnd);
 
   // Initial position
   setPos(50);

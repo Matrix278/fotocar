@@ -15,6 +15,7 @@
       content="Fotocar — Car Photography Estonia | Automotive Photographer Tallinn"
     />
     <meta
+      id="meta-description"
       name="description"
       content="Professional car photography and videography in Estonia. Automotive photographer in Tallinn — BMW, Porsche photoshoots, reels and social media content."
     />
@@ -25,6 +26,10 @@
     <meta name="author" content="Artjom — Fotocar" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://fotocar.eu/" />
+    <link rel="alternate" hreflang="en" href="https://fotocar.eu/?lang=en" />
+    <link rel="alternate" hreflang="ru" href="https://fotocar.eu/?lang=ru" />
+    <link rel="alternate" hreflang="et" href="https://fotocar.eu/?lang=et" />
+    <link rel="alternate" hreflang="x-default" href="https://fotocar.eu/" />
 
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -34,8 +39,13 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://fotocar.eu/" />
-    <meta property="og:title" content="Fotocar — Car Photography Estonia" />
     <meta
+      id="meta-og-title"
+      property="og:title"
+      content="Fotocar — Car Photography Estonia"
+    />
+    <meta
+      id="meta-og-description"
       property="og:description"
       content="Professional automotive photography & videography in Tallinn, Estonia."
     />
@@ -47,10 +57,12 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta
+      id="meta-twitter-title"
       property="twitter:title"
       content="Fotocar — Car Photography Estonia"
     />
     <meta
+      id="meta-twitter-description"
       property="twitter:description"
       content="Professional automotive photography & videography in Tallinn, Estonia."
     />
@@ -91,6 +103,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link rel="preconnect" href="https://elfsightcdn.com" crossorigin />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -160,6 +173,11 @@
             <li class="nav-item me-4">
               <a class="nav-link" href="#reviews" data-i18n="nav.reviews"
                 >Reviews</a
+              >
+            </li>
+            <li class="nav-item me-4">
+              <a class="nav-link" href="#booking" data-i18n="nav.booking"
+                >Book</a
               >
             </li>
             <li class="nav-item me-4">
@@ -233,6 +251,11 @@
               >
             </li>
             <li class="nav-item me-4">
+              <a class="nav-link" href="#booking" data-i18n="nav.booking"
+                >Book</a
+              >
+            </li>
+            <li class="nav-item me-4">
               <a class="nav-link" href="#contacts" data-i18n="nav.contacts"
                 >Contacts</a
               >
@@ -279,6 +302,14 @@
           <p class="lead text-light mb-0" data-i18n="hero.tagline">
             Car Photography &amp; Videography in Estonia
           </p>
+          <div class="mt-4">
+            <a
+              class="btn btn-primary btn-lg px-4"
+              href="#booking"
+              data-i18n="hero.ctaPrimary"
+              >Book a Photoshoot</a
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -547,15 +578,6 @@
           class="text-center d-flex flex-wrap justify-content-center gap-3 mt-4"
         >
           <a
-            class="btn btn-outline-primary"
-            href="https://www.google.com/maps/place/Fotocar/@59.3316019,25.3281021,619m/data=!3m1!1e3!4m8!3m7!1s0x4692e3c42ce3f7fb:0xd7fd794f67d96060!8m2!3d59.3316019!4d25.3281021!9m1!1b1!16s%2Fg%2F11njrmky8z?entry=ttu&g_ep=EgoyMDI2MDUxMy4wIKXMDSoASAFQAw%3D%3D"
-            target="_blank"
-            rel="noopener"
-            data-i18n="reviews.viewAll"
-          >
-            View all reviews on Google
-          </a>
-          <a
             class="btn btn-primary"
             href="https://maps.app.goo.gl/StJyxPyxp7ocw3hA9"
             target="_blank"
@@ -564,6 +586,127 @@
           >
             Leave a Google Review
           </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light" id="booking">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="booking-card p-4 p-md-5 rounded shadow-sm">
+              <h2
+                class="display-6 fw-bold mb-3 text-center"
+                data-i18n="booking.title"
+              >
+                Book a Photoshoot
+              </h2>
+              <p
+                class="text-muted text-center mb-4"
+                data-i18n="booking.subtitle"
+              >
+                Tell me about your car and I'll get back to you quickly.
+              </p>
+              <form
+                action="https://formsubmit.co/fotocar.eu@gmail.com"
+                method="POST"
+              >
+                <input
+                  type="hidden"
+                  name="_subject"
+                  value="New Fotocar booking request"
+                />
+                <input type="hidden" name="_captcha" value="false" />
+                <div class="row g-3">
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label"
+                      for="booking-name"
+                      data-i18n="booking.name"
+                      >Name</label
+                    >
+                    <input
+                      class="form-control"
+                      id="booking-name"
+                      name="name"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label"
+                      for="booking-email"
+                      data-i18n="booking.email"
+                      >Email</label
+                    >
+                    <input
+                      class="form-control"
+                      id="booking-email"
+                      name="email"
+                      type="email"
+                      required
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label"
+                      for="booking-phone"
+                      data-i18n="booking.phone"
+                      >Phone</label
+                    >
+                    <input
+                      class="form-control"
+                      id="booking-phone"
+                      name="phone"
+                      type="tel"
+                    />
+                  </div>
+                  <div class="col-12 col-md-6">
+                    <label
+                      class="form-label"
+                      for="booking-car"
+                      data-i18n="booking.car"
+                      >Car model</label
+                    >
+                    <input
+                      class="form-control"
+                      id="booking-car"
+                      name="car_model"
+                      type="text"
+                      required
+                    />
+                  </div>
+                  <div class="col-12">
+                    <label
+                      class="form-label"
+                      for="booking-message"
+                      data-i18n="booking.message"
+                      >Message</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="booking-message"
+                      name="message"
+                      rows="4"
+                      required
+                    ></textarea>
+                  </div>
+                  <div
+                    class="col-12 d-grid d-sm-flex justify-content-sm-center"
+                  >
+                    <button
+                      class="btn btn-primary btn-lg px-4"
+                      type="submit"
+                      data-i18n="booking.submit"
+                    >
+                      Send Request
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -660,6 +803,14 @@
           <li>
             <a
               class="link-secondary me-4"
+              href="#booking"
+              data-i18n="nav.booking"
+              >Book</a
+            >
+          </li>
+          <li>
+            <a
+              class="link-secondary me-4"
               href="#contacts"
               data-i18n="nav.contacts"
               >Contacts</a
@@ -690,8 +841,8 @@
       </div>
     </footer>
     <script src="https://elfsightcdn.com/platform.js" async></script>
-    <script src="js/bootstrap/bootstrap.bundle.min.js"></script>
-    <script src="js/simple-lightbox/simple-lightbox.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/bootstrap/bootstrap.bundle.min.js" defer></script>
+    <script src="js/simple-lightbox/simple-lightbox.min.js" defer></script>
+    <script src="js/main.js" defer></script>
   </body>
 </html>

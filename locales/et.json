@@ -5,10 +5,15 @@
   "nav.gallery": "Galerii",
   "nav.beforeAfter": "Enne / Pärast",
   "nav.reviews": "Arvustused",
+  "nav.booking": "Broneeri",
   "nav.contacts": "Kontakt",
+
+  "seo.title": "Fotocar — Autode pildistamine Eestis | Autofotograaf Tallinnas",
+  "seo.description": "Professionaalne autode foto- ja videograafia Eestis. Autofotograaf Tallinnas — BMW, Porsche fotosessioonid, reels'id ja sotsiaalmeedia sisu.",
 
   "hero.welcome": "Tere tulemast",
   "hero.tagline": "Autode foto- ja videograafia Eestis",
+  "hero.ctaPrimary": "Broneeri fotosessioon",
 
   "about.text": "Tere! Olen <span class=\"annapurna-sil-bold text-primary\">Artjom</span>, autofotograafia entusiast. Sportautode dünaamilistest kaadritest haaravate videoteni — minu kirg on jäädvustada autode põnevat maailma. Tänu kvaliteetsele töötlusele muudan iga foto väikeseks meistriteoseks, mis säilitab sinu auto olemuse. Vaata minu töid ja liitu selle põneva teekonnaga autode maailmas. Muudame sinu autounistused üheskoos reaalsuseks — üks foto korraga!",
 
@@ -42,8 +47,16 @@
 
   "reviews.title": "Google'i arvustused",
   "reviews.subtitle": "Päris arvustused Google'is Fotocari kohta",
-  "reviews.viewAll": "Vaata kõiki Google'i arvustusi",
   "reviews.leave": "Jäta Google'i arvustus",
+
+  "booking.title": "Broneeri fotosessioon",
+  "booking.subtitle": "Kirjelda oma autot ja vastan kiiresti.",
+  "booking.name": "Nimi",
+  "booking.email": "E-post",
+  "booking.phone": "Telefon",
+  "booking.car": "Auto mudel",
+  "booking.message": "Sõnum",
+  "booking.submit": "Saada päring",
 
   "contacts.title": "Küsimuste korral kirjuta e-postile või sotsiaalmeediasse.",
   "contacts.address": "Aadress:",

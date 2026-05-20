@@ -62,6 +62,12 @@ section[id] {
   scroll-margin-top: 80px;
 }
 
+/* Render off-screen sections lazily for faster initial paint */
+section:not(#about) {
+  content-visibility: auto;
+  contain-intrinsic-size: 1px 900px;
+}
+
 /* Language switcher */
 .language-switcher {
   display: inline-flex;
@@ -206,6 +212,16 @@ section[id] {
 .review-card:hover {
   transform: translateY(-3px);
   box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* Booking */
+.booking-card {
+  background: #fff;
+  border: 1px solid rgba(30, 108, 247, 0.14);
+}
+.booking-card .form-control:focus {
+  border-color: var(--fc-blue);
+  box-shadow: 0 0 0 0.2rem rgba(30, 108, 247, 0.18);
 }
 
 /* SEO badge tweaks */
