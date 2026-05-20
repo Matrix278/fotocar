@@ -78,6 +78,47 @@ section:not(#about) {
   font-weight: 600;
 }
 
+/* Desktop navbar: compact and styled More button */
+#navbarMoreDropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  height: 36px;
+  padding: 0.35rem 0.85rem;
+  border: 1px solid rgba(30, 108, 247, 0.45);
+  border-radius: 999px;
+  background: linear-gradient(180deg, #f4f8ff 0%, #e9f1ff 100%);
+  color: var(--fc-blue) !important;
+  font-weight: 700;
+  line-height: 1;
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+}
+
+#navbarMoreDropdown:hover,
+#navbarMoreDropdown:focus-visible,
+#navbarMoreDropdown.show {
+  background: linear-gradient(180deg, #e9f1ff 0%, #dbe8ff 100%);
+  border-color: var(--fc-blue);
+  box-shadow: 0 0.35rem 0.9rem rgba(30, 108, 247, 0.2);
+  transform: translateY(-1px);
+  outline: none;
+}
+
+.navbar .dropdown-menu {
+  border: 1px solid rgba(30, 108, 247, 0.2);
+  border-radius: 0.65rem;
+  box-shadow: 0 0.8rem 1.4rem rgba(10, 40, 100, 0.14);
+}
+
+.navbar .dropdown-item:active {
+  background-color: var(--fc-blue-soft);
+  color: #0f254f;
+}
+
 /* Services */
 .services-section {
   background: linear-gradient(180deg, #ffffff 0%, var(--fc-blue-soft) 100%);
