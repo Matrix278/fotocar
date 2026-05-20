@@ -195,13 +195,6 @@ section[id] {
   right: 12px;
 }
 
-/* Google reviews embed */
-.google-embed iframe {
-  border: 0;
-  width: 100%;
-  height: 100%;
-}
-
 /* Reviews */
 .review-card {
   background: #fff;
