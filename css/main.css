@@ -52,6 +52,50 @@ body {
   overflow-y: hidden;
 }
 
+/* Gallery */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem;
+}
+
+.gallery-item {
+  overflow: hidden;
+  border-radius: 0.375rem;
+  aspect-ratio: 4 / 3;
+}
+
+.gallery-item a,
+.gallery-item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item img {
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.03);
+}
+
+.gallery-item--portrait img {
+  /* Keep the cars as the focal point when a vertical shot is cropped. */
+  object-position: center 56%;
+}
+
+.gallery-item--landscape img {
+  object-position: center;
+}
+
+@media (min-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
 .annapurna-sil-bold {
   font-family: "Annapurna SIL", serif;
   font-weight: 700;
